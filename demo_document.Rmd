@@ -1,0 +1,50 @@
+---
+title: "demo_document"
+output: html_document
+---
+
+Load the dplyr and ggplot2 packages for data wrangling and visualization, respectively.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+Load data:
+```{r}
+gapminder <- read.csv("https://stat.duke.edu/~mc301/data/gapminder.csv")
+```
+
+
+```{r}
+gap07 <- gapminder %>%
+  filter(year == 2007)
+```
+
+Task: Visualize the relationship between gdpPercap and lifeExp.
+```{r}
+qplot(x = gdpPercap, y = lifeExp, data = gap07)
+```
+
+```{r}
+qplot(x = gdpPercap, y = lifeExp, color = continent, data = gap07)
+```
+
+```{r}
+```
+
+```{r}
+```
+
+```{r}
+```
+
+```{r}
+```
+
+```{r}
+```
+
+
+
+
